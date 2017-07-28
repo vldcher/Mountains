@@ -1,0 +1,222 @@
+main
+	.order
+		position: relative
+		max-width: 1130px
+		height: 200px
+		margin-left: 200px
+		margin-right: 200px
+		background-color: transparent
+		margin-top: -470px
+		// border: 2px solid #fff
+		
+		h1
+			font-size: 48px
+			color: #fff
+			font-family: OpenSans
+			font-weight: bold
+			text-transform: uppercase
+			letter-spacing: 4.8px
+			span
+				color: $accent
+				font-family: Bringin
+				text-transform: none
+				font-weight: normal
+				display: block	
+				margin-top: -5px
+		p
+			color: rgba(255,255,255,.75)
+			font-size: 14px
+			text-align: left
+			margin-top: 10px
+			margin-bottom: 20px
+		a
+			.orderNow
+				color: #fff
+				background-color: $accent
+				text-transform: uppercase
+				padding: 20px 50px
+				border-radius: 5px
+				letter-spacing: 2.5px
+				font-size: 12px
+				font-weight: bold
+				text-align: center
+				border: 3px solid transparent
+				outline: none
+				&:hover
+					color: $accent
+					background-color: transparent
+					border: 3px solid $accent
+					transition: all .25s ease-in-out
+
+	.aboutUsInfo
+		background-color: #f6f4f4
+		max-height: 660px
+		width: 100%
+		background: url(/img/background/aboutUs-fon.jpg) no-repeat
+		background-size: cover
+		.aboutUsWrapper
+			padding-top: 150px
+			h4
+				font-size: 20px
+				text-transform: uppercase
+				font-weight: bold
+				font-family: OpenSans
+				margin-bottom: 25px
+			p
+				margin-bottom: 30px
+				font-size: 14px
+				line-height: 30px
+				padding-right: 80px
+				text-align: left
+			.readMore
+				padding: 10px 20px
+				font-size: 12px
+			.waves
+				margin-bottom: 15px
+
+	.aboutUsImgs
+		position: relative
+		.aboutUs-big
+			max-width: 800px
+			width: 100%
+			margin-top: -25px
+			margin-left: -20px
+			z-index: 1
+			position: relative
+		.aboutUs-small
+			position: relative
+			max-width: 280px
+			width: 100%
+			z-index: 2
+			top: -160px
+			left: -110px
+
+	.ourJournalWrapper
+		.waves
+			margin-top: 60px
+			text-align: center
+		h2
+			font-size: 30px
+			font-weight: bold
+			font-family: OpenSans
+			text-align: center
+			text-transform: uppercase
+			margin-top: 30px
+			margin-bottom: 70px
+
+
+
+
+
+
+		// $colors: $blue, $red, $accent
+		// @for $i from 1 through length($colors)
+		// 	.carousel-mountains .owl-item:nth-child(#{length($colors)}n+#{$i})
+		// 		background-color: nth($colors, $i)
+
+		.carousel-mountains
+			background-color: #fff
+			&-item
+				font-size: 18px
+				color: #fff
+				font-weight: 300
+				position: relative
+				display: flex
+				flex-direction: column-reverse
+			
+				&:hover
+					.carousel-mountains-image
+						opacity: 1
+				.carousel-logo
+					text-align: center
+					img
+						width: 100px
+						height: auto
+						display: inline-block
+
+			.owl-item
+				&:nth-child(2n+2)
+					.carousel-mountains-item
+						flex-direction: column	
+						
+			&-image
+				background-size: cover
+				background-position: center
+				opacity: .7
+				transition: opacity .5s ease
+			&-content
+				position: relative
+				padding: 40px 10%
+
+			&-composition
+				margin: auto
+				text-align: center
+				width: 100%
+				h3
+					color: $accent
+					font-size: 12px
+					font-weight: bold
+					text-transform: uppercase
+
+				h5
+					color: $dark
+					font-weight: bold
+					font-size: 16px
+					margin-top: 40px
+					margin-bottom: 20px
+					text-transform: uppercase
+					line-height: 1.3em
+					
+				p
+					color: #777777
+					font-weight: normal
+					font-size: 14px
+					line-height: 1.3em
+
+
+				span
+					color: $dark
+					margin-top: 25px
+					display: block
+					font-size: 14px
+					font-style: italic
+					
+
+			&-list
+				margin: 0
+				padding: 0
+				list-style-type: none
+				margin-bottom: 20px
+				li
+					padding: 8px
+					border-bottom: 1px solid rgba(#000, .12)
+					&:last-child
+						border-bottom: none
+					strong
+						font-family: firasans, sans-serif
+						color: #4A4A4A
+					.fa
+						font-size: 14px
+			
+			.owl-nav
+				position: absolute
+				top: 0
+				width: 100%
+				> div
+					width: 64px
+					height: 64px
+					background-color: #fff
+					color: $dark
+					position: absolute
+					text-align: center
+					line-height: 64px
+					font-size: 26px
+					&.owl-prev
+						left: 0
+					&.owl-next
+						right: 0
+
+		.owl-carousel
+			.owl-item
+				backface-visibility: inherit
+

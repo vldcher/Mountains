@@ -1,0 +1,45 @@
+.button_primary
+	color: #fff
+	background-color: $accent
+	text-transform: uppercase
+	padding: 20px 50px
+	border-radius: 5px
+	letter-spacing: 2.5px
+	font-size: 12px
+	font-weight: bold
+	text-align: center
+	border: 3px solid transparent
+	outline: none
+	&:hover
+		color: $accent
+		background-color: transparent
+		border: 3px solid $accent
+		transition: all .25s ease-in-out
+	&:focus
+		text-decoration: none
+		color: #fff
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+
+.button_secondary
+	color: $accent
+	white-space: nowrap
+	padding: 15px 42px
+	background-color: transparent
+	border: 3px solid $accent
+	border-radius: 5px
+	font-size: 12px
+	font-weight: bold
+	text-transform: uppercase
+	letter-spacing: 1.5px
+	outline: none
+	&:hover
+		color: #fff
+		background-color: $accent
+		transition: all .25s ease-in-out
+
+
