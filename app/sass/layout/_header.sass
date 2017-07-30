@@ -6,8 +6,8 @@
 		background: url(/img/background/header-background.jpg) no-repeat
 		position: relative
 		background-size: cover
-
-
+		z-index: 1
+		
 
 		.navigation
 			position: fixed
@@ -68,7 +68,55 @@
 							color: #fff
 							background-color: $accent
 							transition: all .25s ease-in-out
-					
+		
+		.order
+			position: relative
+			max-width: 1130px
+			height: 200px
+			margin-left: 200px
+			margin-right: 200px
+			background-color: transparent
+			margin-top: 220px
+			// border: 2px solid #fff
+			
+			h1
+				font-size: 48px
+				color: #fff
+				font-family: OpenSans
+				font-weight: bold
+				text-transform: uppercase
+				letter-spacing: 4.8px
+				span
+					color: $accent
+					font-family: Bringin
+					text-transform: none
+					font-weight: normal
+					display: block	
+					margin-top: -5px
+			p
+				color: rgba(255,255,255,.75)
+				font-size: 14px
+				text-align: left
+				margin-top: 10px
+				margin-bottom: 20px
+			a
+				.orderNow
+					color: #fff
+					background-color: $accent
+					text-transform: uppercase
+					padding: 20px 50px
+					border-radius: 5px
+					letter-spacing: 2.5px
+					font-size: 12px
+					font-weight: bold
+					text-align: center
+					border: 3px solid transparent
+					outline: none
+					&:hover
+						color: $accent
+						background-color: transparent
+						border: 3px solid $accent
+						transition: all .25s ease-in-out			
 		
 
 						

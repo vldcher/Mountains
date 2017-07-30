@@ -14,14 +14,26 @@
 					.menu
 						.hamburger
 							display: none
+		.order
+			
+			h1
+				font-size: 42px
+				letter-spacing: 4.5px
+				white-space: nowrap
 				
 		main
-			.order
-				margin-top: -500px
-				h1
-					font-size: 58px
-					letter-spacing: 4.5px
-					white-space: nowrap
+			
+			.wannaGo
+				.wannaGoContent
+					.orderForm
+						INPUT[type="text"], INPUT[type="email"] 
+							padding-right: 50px
+							padding-top: 15px
+							padding-bottom: 15px
+							padding-left: 20px
+						INPUT[type="submit"]
+							padding: 15px 40px
+							font-size: 16px
 
 
 /* Large Devices, Wide Screens */
@@ -41,19 +53,46 @@
 					.menu
 						.hamburger
 							display: none
-				
-		main
-			.order
-				margin-top: -300px
+		.order
+
 				h1
 					font-size: 42px
 					letter-spacing: 4.5px
 					white-space: nowrap
+		main
+			
+			.wannaGo
+				.trees
+					overflow: hidden
+					.tree1
+						z-index: 2
+						bottom: -187px
+					.tree2
+						z-index: 5
+						top: -375px
+						max-height: 560px
+						right: -100px
+
+				.wannaGoContent
+					.orderForm
+						INPUT[type="text"], INPUT[type="email"] 
+							border-radius: 3px
+							padding-right: 20px
+							padding-top: 10px
+							padding-bottom: 10px
+							padding-left: 10px
+
+
+						INPUT[type="submit"]
+							padding: 11px 30px
+							font-size: 14px
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
+	#desktop-menu
+		display: block
 	#my-page	
 		header
 			.navigation
@@ -61,8 +100,34 @@
 					.menu
 						.hamburger
 							display: none
-	#desktop-menu
-		display: block
+	
+		main
+			.wannaGo
+				.trees
+					overflow: visible
+					.tree1
+						z-index: 2
+						bottom: -187px
+						////////////////////////// CHECK IT
+					.tree2
+						display: none
+						////////////////////
+				.wannaGoContent
+					img
+						margin-top: 80px
+						margin-bottom: 25px
+				
+					.orderForm
+						INPUT[type="text"], INPUT[type="email"] 
+							padding-right: 0px
+							padding-top: 8px
+							padding-bottom: 8px
+							padding-left: 10px
+
+						INPUT[type="submit"]
+							padding: 10px 10px
+							font-size: 12px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -78,9 +143,6 @@
 					margin: auto
 					.menu
 						margin-top: 20px
-						// display: flex
-						// justify-content: space-between
-						// align-items: flex-start
 					
 						.container-menu
 							display: none
@@ -103,10 +165,8 @@
 								font-size: 14px
 						.logo
 							text-align: center
-				
-		main
-			.order
-				margin-top: -280px
+		.order
+
 				h1
 					font-size: 30px
 					letter-spacing: 3.0px
@@ -115,32 +175,175 @@
 				.orderNow
 					padding: 15px 35px
 					font-size: 12px
+				
+		main
+			
+			.aboutUsImgs
+				position: relative
+				.aboutUs-big
+					margin-top: 20px
+					margin-left: 0px
+				.aboutUs-small
+					max-width: 220px
+					top: 0px
+					left: 125px
+			.wannaGo
+				.trees
+					overflow: visible
+					.tree1
+						z-index: 2
+						bottom: -187px
+					.tree2
+						display: none
+				.wannaGoContent
+					padding: 20px
+					img
+						margin-top: 50px
+						margin-bottom: 25px
+					.orderForm
+						INPUT[type="text"], INPUT[type="email"] 
+							padding-right: 0px
+							padding-top: 8px
+							padding-bottom: 9px
+							padding-left: 10px
+
+						INPUT[type="submit"]
+							padding: 10px 10px
+							font-size: 12px
+							margin-top: 20px
+							text-align: center
 
 	#desktop-menu
 		display: none
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
 	/**/
+	#my-page
+		header
+			.order
+				margin-top: 180px
+				margin-left: 120px
+				margin-right: 120px
+				text-align: center
+				h1
+					font-size: 36px
+					letter-spacing: 4.0px
+					text-align: center
+				p
+					text-align: center
+				.orderNow
+					padding: 15px 35px
+					font-size: 14px
 
-	main
-		.order
-			margin-top: -210px
-			h1
-				font-size: 36px
-				letter-spacing: 4.0px
-			.orderNow
-				padding: 15px 35px
-				font-size: 14px
+		main
+			
+			.aboutUsInfo
+				.aboutUsWrapper
+					padding-top: 50px
+					text-align: center
+					h4
+						font-size: 20px
+						text-transform: uppercase
+						font-weight: bold
+						font-family: OpenSans
+						margin-bottom: 25px
+					p
+						margin-bottom: 20px
+						padding-right: 0px
+						text-align: center
+					.readMore
+						padding: 10px 20px
+						font-size: 12px
+						margin-bottom: 20px
+					.waves
+						margin-bottom: 15px
+			.ourJournalWrapper
+				.waves
+					margin-top: 30px
+					text-align: center
+				h2
+					font-size: 30px
+					font-weight: bold
+					font-family: OpenSans
+					text-align: center
+					text-transform: uppercase
+					margin-top: 20px
+					margin-bottom: 20px			
+			.aboutUsImgs
+				position: relative
+				.aboutUs-big
+					margin-top: 20px
+					margin-left: 0px
+				.aboutUs-small
+					display: none
+
+			.wannaGo
+				height: 500px
+				text-align: center
+				.trees
+					overflow: visible
+					.tree1
+						display: none
+					.tree2
+						display: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 576px)
 	/**/
+	#my-page
+		header
+			.order
+				margin-top: 140px
+				margin-left: 50px
+				margin-right: 50px
+				text-align: center
+				h1
+					font-size: 42px
+					letter-spacing: 4.0px
+					text-align: center
+				p
+					text-align: center
+					font-size: 16px
+				.orderNow
+					padding: 15px 35px
+					font-size: 14px	
+		main
+			.wannaGo
+				.wannaGoContent
+					padding: 20px
+					img
+						margin-top: 20px
+						margin-bottom: 20px
+					.orderForm
+						INPUT[type="text"], INPUT[type="email"] 
+							padding-right: 0px
+							padding-top: 8px
+							padding-bottom: 9px
+							padding-left: 10px
+							display: block
+							width: 100%
+							margin-bottom: 20px
 
-
+						INPUT[type="submit"]
+							padding: 10px 70px
+							font-size: 12px
+							margin-top: 0px
+							text-align: center
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	#my-page
+		header
+			.order
+				margin-top: 120px
+				margin-left: 20px
+				margin-right: 20px
+
+				h1
+					font-size: 36px
+
+
 
 
 /* Custom, iPhone Retina */
