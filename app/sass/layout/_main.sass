@@ -228,6 +228,7 @@ main
 
 		.trees
 			position: relative
+			max-height: 600px
 			.tree1, .tree2
 				position: relative
 				
@@ -284,4 +285,99 @@ main
 						font-size: 18px
 						margin-right: 5px
 
-		
+	.howWork
+		.waves
+			text-align: center
+			margin-top: 60px
+			margin-bottom: 35px
+		h2
+			font-size: 30px
+			font-weight: bold
+			font-family: OpenSans
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 70px
+		.workElementWrapper
+			.workElement
+				display: flex
+				flex-direction: column
+				.smallCircle
+					margin: auto
+					width: 50px
+					height: 50px
+					background: #fff
+					border: 3px solid $accent
+					line-height: 43px
+					text-align: center
+					font-size: 14px
+					color: $accent
+					border-radius: 25px
+					font-weight: bold
+					font-family: OpenSans
+					margin-bottom: 60px
+					// &:hover
+					// 	cursor: pointer
+					// 	background: $accent
+					// 	color: #fff
+					// 	transition: all .5s ease
+				.bigCircle
+					margin: auto
+					width: 180px
+					height: 180px
+					border-radius: 90px
+					background-color: #f0f3f6
+					// box-shadow: 0px 2px 46px 6px rgba(54,146,255,0.35)
+					box-shadow: 0px 2px 16px 6px rgba(0,0,0,0.2)
+					&:hover
+						cursor: pointer
+						box-shadow: 0px 2px 16px 4px rgba(0,0,0,0.2)
+						transition: all .5s
+					.d16
+						margin: auto
+						margin-top: 65px
+						width: 100px
+						height: 55px
+						// background: lighten($accent, 30%)
+						background: #fff
+						position: relative
+						transition: transform 0.5s
+
+						&::before, &::after
+							content: ""
+							width: 0
+							height: 0
+							position: absolute
+							left: 0
+							border-left: 50px solid transparent
+							border-right: 50px solid transparent
+						&::before
+							top: -30px
+							border-bottom: 30px solid #fff
+						&::after
+							bottom: -30px
+							border-top: 30px solid #fff
+						&:hover
+							transform: rotateZ(360deg)
+						.step1
+							padding: 7px 34px
+						.step2
+							padding: 8px 29px
+						.step3
+							padding: 9px 30px
+						.step4
+							padding: 9px 31px
+							
+
+
+			.workText
+				margin-top: 30px
+				p
+					font-weight: bold
+					font-size: 24px
+					text-align: center
+					margin-bottom: 10px
+				span
+					text-align: center
+					font-size: 14px
+					line-height: 20px
+					display: block
