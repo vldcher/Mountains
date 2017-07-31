@@ -159,7 +159,6 @@
 									height: 4px
 									background-color: darken($accent, 10%)
 
-
 							.callUs
 								padding: 10px 30px
 								font-size: 14px
@@ -192,7 +191,7 @@
 					overflow: visible
 					.tree1
 						z-index: 2
-						bottom: -187px
+						bottom: -207px
 					.tree2
 						display: none
 				.wannaGoContent
@@ -206,12 +205,14 @@
 							padding-top: 8px
 							padding-bottom: 9px
 							padding-left: 10px
+							margin-bottom: 20px
 
 						INPUT[type="submit"]
 							padding: 10px 10px
 							font-size: 12px
-							margin-top: 20px
 							text-align: center
+							display: block
+
 
 	#desktop-menu
 		display: none
@@ -287,7 +288,10 @@
 						display: none
 					.tree2
 						display: none
-
+				.wannaGoContent
+					.orderForm
+						INPUT[type="submit"]
+							display: inline-block
 /* Small Devices, Tablets */
 @media only screen and (max-width : 576px)
 	/**/
@@ -339,9 +343,28 @@
 				margin-top: 120px
 				margin-left: 20px
 				margin-right: 20px
-
 				h1
 					font-size: 36px
+			.navigation
+				.overlay
+					.menu
+						.container-menu
+						.hamburger-and-callUs
+							.hamburger
+								padding: 0
+							.callUs
+								padding: 12px 20px
+								margin-left: 120px
+								margin-top: 0px
+						.logo
+							text-align: left
+							margin-left: -12px
+
+		main
+			.wannaGo
+				.mountBack
+					height: 120px
+
 
 
 
@@ -349,7 +372,29 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
+	#my-page
+		header
+			.order
+				h1
+					font-size: 28px
+				p
+					font-size: 13px
+			.navigation
+				.overlay
+					.menu
+						.container-menu
+						.hamburger-and-callUs
+							display: flex
+							margin: auto
+							justify-content: space-between
+							.hamburger
+								padding: 0
+							.callUs
+								padding: 12px 20px
+								margin-left: 0px
+								margin-top: 0px
+						.logo
+							display: none
 
 /*==========  Mobile First  ==========*/
 
