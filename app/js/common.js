@@ -102,4 +102,10 @@ $(function() {
 		});
 	}carouselMountain();
 
+// 	$('.target').blurjs({
+// 		source: '#blur',
+// 		radius: 7,
+// 		overlay: 'rgba(255,255,255,0.4)'
+// });
+
 });
