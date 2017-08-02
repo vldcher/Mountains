@@ -127,7 +127,49 @@
 						INPUT[type="submit"]
 							padding: 10px 10px
 							font-size: 12px
+			.travelWithUs
+				.travelWithUsWrapper
+					.travelWithUsContainer
+						.map
+							.mountains
+								.carpathians, .alps, .pyrenees, .rocky, .kavkaz
+									background: url(/img/Mountains/carpathian2.jpg) no-repeat
+									margin-bottom: 50px
+									&:hover
+										// transform: scale(1.02)
+										transition: all .5s ease
+										cursor: pointer
+										.stars
+										.blur
+											.newPrice
+												transform: rotateZ(360deg)
+												transition: transform 1s
 
+									.stars
+										.fa
+											font-size: 24px
+									h3
+										font-size: 28px
+										margin-top: 180px
+									p
+										font-size: 16px
+									.blur
+										.oldPrice
+											font-size: 18px
+										.newPrice
+											font-size: 28px
+
+								.alps
+									background: url(/img/Mountains/alps2.jpg) no-repeat
+								.pyrenees
+									background: url(/img/Mountains/pyrenees2.jpg) no-repeat
+								.rocky
+									background: url(/img/Mountains/rocky2.jpg) no-repeat
+								.kavkaz
+									background: url(/img/Mountains/kavkaz2.jpg) no-repeat
+
+						.lake
+							margin-top: 1%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -328,9 +370,15 @@
 					margin-bottom: 0px
 				.workElementWrapper
 					.workElement
-						
 						.smallCircle
 							margin-top: 50px
+
+			.travelWithUs
+				.travelWithUsWrapper
+					.travelWithUsContainer
+						.lake
+							display: none
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 576px)
@@ -437,9 +485,64 @@
 							font-size: 12px
 							display: block
 
+			.travelWithUs
+				.travelWithUsWrapper
+					.travelWithUsContainer
+						.map
+							.mountains
+								.carpathians, .alps, .pyrenees, .rocky, .kavkaz
+									background: url(/img/Mountains/carpathian3.jpg) no-repeat
+									height: 280px
+									&:hover
+										transition: all .5s ease
+										cursor: pointer
+										.stars
+											.fa
+												margin: 0 3px
+												font-size: 18px
+												
+											h3
+												margin-top: 100px
+												transition: all .5s ease
+										.blur
+											.newPrice
+												transform: rotateZ(360deg)
+												transition: transform 1s
+								
+									.stars
+										padding-top: 10px
+										padding-left: 5px
+										color: #ffffff
+										.fa
+											font-size: 18px
+									h3
+										color: #fff
+										font-size: 24px
+										margin-top: 80px
+										margin-left: 5px
+										margin-right: 5px
 
-
-
+									p
+										color: #fff
+										font-size: 14px
+										margin-left: 5px
+									.blur
+										.oldPrice
+											font-size: 14px
+										.newPrice
+											font-size: 24px
+								.alps
+									background: url(/img/Mountains/alps2.jpg) no-repeat
+								.pyrenees
+									background: url(/img/Mountains/pyrenees2.jpg) no-repeat
+								.rocky
+									background: url(/img/Mountains/rocky2.jpg) no-repeat
+								.kavkaz
+									background: url(/img/Mountains/kavkaz2.jpg) no-repeat
+						.lake
+							margin-top: -50px
+							height: 800px
+							background-size: cover
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
