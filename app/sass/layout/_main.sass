@@ -484,7 +484,220 @@ main
 					margin-top: -450px
 					width: 100%
 					height: 800px
-					
+	.gallery
+		.galleryWrapper
+			.waves
+				text-align: center
+				margin-bottom: 35px
+				padding-top: 60px
+			h2
+				font-size: 30px
+				font-weight: bold
+				font-family: OpenSans
+				text-align: center
+				text-transform: uppercase
+				margin-bottom: 60px
 
-						
+
+			// button
+			// 	margin-top: 10px
+
+			// ul
+			// 	color: #ECECEC
+			// 	text-align: center
+			// 	margin: 0
+			// 	padding: 0
+			// 	list-style-type: none
+
+			// p
+			// 	max-width: 500px
+			// 	margin-left: auto
+			// 	margin-right: auto
+
+			// a
+			// 	color: #c48ec8
+			// 	transition: color 0.25s cubic-bezier(0.86, 0, 0.07, 1) ease-in-out
+
+
+			// button
+			// 	color: #FFF
+			// 	font-size: 12px
+			// 	letter-spacing: 0.3em
+			// 	text-transform: uppercase
+			// 	border-radius: 4px
+			// 	cursor: pointer
+			// 	border: none
+			// 	background: #c48ec8
+			// 	padding: 8px 14px
+
+			// ul.animate
+			// 	transition: transform 0.75s cubic-bezier(0.86, 0, 0.07, 1) ease-in-out
+
+
+			// .stage
+			// 	width: 76%
+			// 	margin: 0 auto
+			// 	padding: 0 12%
+			// 	text-align: center
+			// 	overflow: hidden
+
+			// .sldr
+			// 	max-width: 825px
+			// 	margin: 0 auto
+			// 	overflow: visible
+			// 	position: relative
+			// 	clear: both
+			// 	display: block
+			// 	> ul > li
+			// 		float: left
+			// 		display: block
+			// 		width: 825px
+
+			// div.skew
+			// 	max-width: 825px
+			// 	margin: 0 auto
+			// 	display: block
+			// 	overflow: hidden
+			// 	-webkit-transform: skewX(16deg)
+			// 	-moz-transform: skewX(16deg)
+			// 	-ms-transform: skewX(16deg)
+			// 	transform: skewX(16deg)
+			// 	> div.wrap
+			// 		display: block
+			// 		overflow: hidden
+			// 		-webkit-transform: skewX(-16deg)
+			// 		-moz-transform: skewX(-16deg)
+			// 		-ms-transform: skewX(-16deg)
+			// 		transform: skewX(-16deg)
+			// 		margin-left: -10.1%
+			// 		width: 122%
+
+			// // img
+			// // 	max-width: 1000px
+			// // 	width: 100%
+			// // 	height: auto
+			// // 	display: block
+			// // 	margin: 0 auto
+
+			// .selectors
+			// 	/*margin: 15px 0 0; */
+			// 	li
+			// 		font-size: 46px
+			// 		line-height: 32px
+			// 		display: inline
+			// 		padding: 0 2px
+			// 		a
+			// 			text-decoration: none
+			// 		&.focalPoint a
+			// 			color: #CCC
+			// 			cursor: default
+
+			// .captions div
+			// 	left: 200%
+			// 	position: fixed
+			// 	opacity: 0
+			// 	transition: opacity 0.75s cubic-bezier(0.86, 0, 0.07, 1) ease-in-out
+			// 	&.focalPoint
+			// 		opacity: 1
+			// 		left: inherit
+			// 		position: static
+
+			// .clear
+			// 	display: block
+			// 	width: 100%
+			// 	height: 0px
+			// 	overflow: hidden
+			// 	clear: both
+		.partners
+			width: 100%
+			.partnersContainer
+				height: 170px
+				display: flex
+				justify-content: space-between
+				align-items: center
+
+
+
+	.ourClients
+		.ourClientsWrapper
+			.waves
+				text-align: center
+				margin-bottom: 35px
+				padding-top: 60px
+			h2
+				font-size: 30px
+				font-weight: bold
+				font-family: OpenSans
+				text-align: center
+				text-transform: uppercase
+				margin-bottom: 70px
+			.ourClientsContainer
+				background: url(/img/background/bottom.jpg) no-repeat
+				position: relative
+				width: 100%
+				height: 1000px
+				background-size: cover
+				.reviews
+					text-align: center
+					
+					.owl-dots
+						width: 100%
+						text-align: center
+						display: inline-block
+						.owl-dot
+							width: 8px
+							height: 8px
+							background-color: #fff
+							border-radius: 10em
+							display: inline-block
+							margin: 5px
+							transition: background-color .5s ease, transform .5s ease
+							&.active
+								background-color: $accent
+								transform: scale(1.3)
+				.review
+					margin-top: 20px
+					&-header
+						font-family: 'Times New Roman', serif
+						font-style: italic
+						font-size: 30px
+						font-weight: bold
+					&-date
+						font-family: 'Times New Roman', serif
+						font-style: italic
+						font-size: 16px
+						color: #888
+					&-stars
+						margin: 18px 0 30px
+						font-size: 14px
+						color: $accent
+						.fa
+							margin: 0 2px
+					&-text
+						color: #959899
+
+
+
+				.quotes
+					position: absolute
+					width: 100%
+					&::before, &::after
+						content: ',,'
+						position: absolute
+						top: 142px
+						font-size: 56px
+						color: $accent
+						font-family: 'Times New Roman', serif
+						font-weight: bold
+						line-height: 0
+						transform: rotate(180deg)
+						display: block
+					&::before
+						top: 300px
+						left: 20px
+						transform: rotate(0deg)
+					&::after
+						top: 0px
+						right: 20px
+						transform: rotate(180deg)
 

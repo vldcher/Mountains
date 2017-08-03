@@ -33,6 +33,9 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/equalheights/equalheights.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
 		'app/libs/Blur.js/dist/jquery.blur.js',
+		'app/libs/photoswipe/dist/photoswipe-ui-default.min.js',
+		'app/libs/photoswipe/dist/photoswipe.min.js',
+		'app/libs/jquery.sldr/jquery.sldr.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

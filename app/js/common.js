@@ -102,10 +102,32 @@ $(function() {
 		});
 	}carouselMountain();
 
-// 	$('.target').blurjs({
-// 		source: '#blur',
-// 		radius: 7,
-// 		overlay: 'rgba(255,255,255,0.4)'
-// });
+	$('.reviews').owlCarousel({
+		loop: true,
+		items: 2,
+		smartSpeed: 700,
+		nav: false,
+		autoHeight: true
+	});
+/////////////////////////////////////////////////////
+$( '.sldr' ).each( function() {
+		var th = $( this );
+		th.sldr({
+			focalClass    : 'focalPoint',
+			offset        : th.width() / 2,
+			sldrWidth     : 'responsive',
+			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+			sldrInit      : sliderInit,
+			sldrStart     : slideStart,
+			sldrComplete  : slideComplete,
+			sldrLoaded    : sliderLoaded,
+			sldrAuto      : true,
+			sldrTime      : 5000,
+			hasChange     : true
+		});
+	});
 
 });
