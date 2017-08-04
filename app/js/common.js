@@ -107,27 +107,40 @@ $(function() {
 		items: 2,
 		smartSpeed: 700,
 		nav: false,
-		autoHeight: true
+		autoHeight: true,
+		responsive: {
+
+			0: {
+				items: 1
+			},
+			767: {
+				items:1
+			},
+			768: {
+				items: 2
+			}	
+		}
+
 	});
 /////////////////////////////////////////////////////
-$( '.sldr' ).each( function() {
-		var th = $( this );
-		th.sldr({
-			focalClass    : 'focalPoint',
-			offset        : th.width() / 2,
-			sldrWidth     : 'responsive',
-			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
-			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
-			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
-			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
-			sldrInit      : sliderInit,
-			sldrStart     : slideStart,
-			sldrComplete  : slideComplete,
-			sldrLoaded    : sliderLoaded,
-			sldrAuto      : true,
-			sldrTime      : 5000,
-			hasChange     : true
-		});
-	});
+// $( '.sldr' ).each( function() {
+// 		var th = $( this );
+// 		th.sldr({
+// 			focalClass    : 'focalPoint',
+// 			offset        : th.width() / 2,
+// 			sldrWidth     : 'responsive',
+// 			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+// 			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+// 			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+// 			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+// 			sldrInit      : sliderInit,
+// 			sldrStart     : slideStart,
+// 			sldrComplete  : slideComplete,
+// 			sldrLoaded    : sliderLoaded,
+// 			sldrAuto      : true,
+// 			sldrTime      : 5000,
+// 			hasChange     : true
+// 		});
+// 	});
 
 });
