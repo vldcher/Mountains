@@ -73,10 +73,8 @@ $(function() {
 	});
 	$('.carousel-mountains').owlCarousel({
 		loop: true,
-		// nav: true,
 		nav: false,
 		smartSpeed: 700,
-		// navText: ['<i class="fa fa-angle-double-left"></i>','<i class="fa fa-angle-double-right"></i>'],
 		responsiveClass: true,
 		dots: false,
 		responsive: {
@@ -122,25 +120,34 @@ $(function() {
 		}
 
 	});
-/////////////////////////////////////////////////////
-// $( '.sldr' ).each( function() {
-// 		var th = $( this );
-// 		th.sldr({
-// 			focalClass    : 'focalPoint',
-// 			offset        : th.width() / 2,
-// 			sldrWidth     : 'responsive',
-// 			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
-// 			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
-// 			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
-// 			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
-// 			sldrInit      : sliderInit,
-// 			sldrStart     : slideStart,
-// 			sldrComplete  : slideComplete,
-// 			sldrLoaded    : sliderLoaded,
-// 			sldrAuto      : true,
-// 			sldrTime      : 5000,
-// 			hasChange     : true
-// 		});
-// 	});
+	$('.galleryCarousel').owlCarousel({
+		loop: true,
+		items: 3,
+		smartSpeed: 900,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		autoHeight: true,
+		autoWidth: true,
+		center: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		responsive: {
+
+			0: {
+				items: 1
+			},
+			576: {
+				items: 2
+			},
+			992: {
+				items: 2
+			},
+			1200: {
+				items: 3
+			}		
+		}
+
+	});
 
 });
