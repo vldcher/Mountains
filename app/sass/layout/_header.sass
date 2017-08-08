@@ -2,8 +2,7 @@
 	header
 		width: 100%
 		height: 70vh
-		background-color: #fff
-		background: url(/img/background/header-background.jpg) no-repeat
+		// background: url(/img/background/header-background.jpg) no-repeat
 		position: relative
 		background-size: cover
 		z-index: 10
@@ -99,25 +98,28 @@
 				text-align: left
 				margin-top: 10px
 				margin-bottom: 20px
-			a
-				.orderNow
+			.orderNow
+				
+				background-color: $accent
+				text-transform: uppercase
+				padding: 20px 50px
+				border-radius: 5px
+				letter-spacing: 2.5px
+				font-size: 12px
+				font-weight: bold
+				text-align: center
+				border: 3px solid transparent
+				outline: none
+				&:hover
+					color: $accent
+					background-color: transparent
+					border: 3px solid $accent
+					transition: all .25s ease-in-out			
+				a
 					color: #fff
-					background-color: $accent
-					text-transform: uppercase
-					padding: 20px 50px
-					border-radius: 5px
-					letter-spacing: 2.5px
-					font-size: 12px
-					font-weight: bold
-					text-align: center
-					border: 3px solid transparent
-					outline: none
-					&:hover
-						color: $accent
-						background-color: transparent
-						border: 3px solid $accent
-						transition: all .25s ease-in-out			
-		
+					text-decoration: none
+
+
 
 						
 #my-menu
